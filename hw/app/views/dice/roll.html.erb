@@ -1,0 +1,10 @@
+<h1>Dice Game</h1>
+<img src="http://jeffcohenonline.com/dice/<%= @first_die[0] %>.png">
+<img src="http://jeffcohenonline.com/dice/<%= @second_die[0] %>.png">
+
+<h2>You rolled a <%= @result %></h2>
+<h3><%= @answer %></h3>
+<form action=<%= @next_page %>>
+<input type="hidden" name="number" value="<%= @result %>">
+<button><%= @button_text %></button>
+</form>
